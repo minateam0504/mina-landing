@@ -105,12 +105,12 @@
             class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 xl:gap-10"
           >
             <a
-              href="#"
+              href="#video-section"
               class="text-mina-text text-base sm:text-lg xl:text-xl font-normal hover:opacity-80 transition-opacity"
               >About Us</a
             >
             <a
-              href="#"
+              href="#early-access-section"
               class="w-60 sm:w-72 xl:w-[321px] h-12 xl:h-[55px] rounded-full bg-white border-2 border-mina-text flex items-center justify-center text-mina-text text-lg sm:text-xl xl:text-2xl font-medium hover:bg-gray-50 transition-colors"
               >Try out the Beta</a
             >
@@ -145,7 +145,7 @@
           </section>
 
           <!-- Hero Image -->
-          <div class="relative flex justify-center mt-10">
+          <div class="relative flex justify-center mt-10" name="hero">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/ac476d45f4824843d11d4b457b76da1e25092ff0?width=1290"
               alt="Design Elements"
@@ -175,13 +175,14 @@
           </div>
 
           <!-- Early Access Section -->
-      <section
-  class="absolute top-[510px] sm:top-[590px] xl:top-[890px] left-1/2 -translate-x-1/2 
+      <section 
+          class="absolute top-[510px] sm:top-[590px] xl:top-[890px] left-1/2 -translate-x-1/2 
          w-[90%] sm:w-[500px] lg:w-[700px] xl:w-[1260px] 
          h-auto xl:h-[910px] bg-mina-bg rounded-3xl sm:rounded-5xl xl:rounded-[164px] 
          flex flex-col items-center justify-center p-8 sm:p-12"
+            id="early-access-section" 
 >
-            <div class="relative">
+            <div class="relative"  >
               <h2
                 class="text-mina-text font-recoleta text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-normal mb-2 sm:mb-4 xl:mb-3 xl:mt-24"
               >
@@ -400,27 +401,46 @@
         </section>
 
         <!-- Video Section -->
-        <div
-          class="relative w-[90%] xl:w-[1080px] h-48 sm:h-64 md:h-80 xl:h-[611px] bg-gray-300 rounded-lg lg:mt-20 mx-auto"
-        >
-          <!-- Item 16: Instagram section right 线条 右下角-->
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/ac847b7d442ade99e76c6d8aa1db1e3c3b7b20b2?width=214"
-            alt="Decorative"
-            class="decorative-item absolute w-12 h-12 sm:w-14 sm:h-14 md:w-18 md:h-18 lg:w-22 lg:h-22 xl:w-[107px] xl:h-[107px] transform rotate-[-10deg] left-[100%] bottom-[-40px] xl:left-[160%]"
-          />
+      <div class="relative w-[90%] max-w-[1080px] mx-auto rounded-lg overflow-hidden pt-[56.25%] mt-20" id="video-section">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full rounded-lg border-0"
+          src="https://www.youtube.com/embed/aKcGKcunqa4"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+      
+     
+
         </div>
 
         <!-- Instagram Section -->
         <section
-          class="relative w-[90%] xl:w-[1260px] h-auto xl:h-[800px] bg-mina-bg rounded-3xl sm:rounded-5xl xl:rounded-[164px] flex flex-col items-center justify-center p-8 sm:p-12  mx-auto"
+          class="relative w-[90%] xl:w-[1260px] h-auto xl:h-[800px] bg-mina-bg rounded-3xl sm:rounded-5xl xl:rounded-[164px] flex flex-col items-center justify-center p-8 sm:p-12 pt-20 mx-auto"
         >
           <div class="relative">
             <h2
-              class="relative text-mina-text font-recoleta text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-normal mb-4 sm:mb-5 xl:mb-5 xl:mt-20"
+              class="relative text-mina-text font-recoleta text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-normal mb-4 sm:mb-5 xl:mb-5 xl:mt-20 "
             >
               Check out our Instagram!
             </h2>
+
+
+            <!-- Item 8: Far left decorative 灰色星星左边 -->
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/a7fb964cff9c0f6c9098ac7852b4e561614fc41d?width=255"
+              alt="Decorative"
+              class="decorative-item absolute w-14 h-14 sm:w-18 sm:h-18 md:w-22 md:h-22 lg:w-28 lg:h-28 xl:w-[128px] xl:h-[128px] transform rotate-[-12deg] top-[-100px] left-[-100px] sm:left-[-200px] lg:left-[-200px] xl:left-[-280px]"
+            />
+
+
+            <!-- Item 10: Features section left 线条-->
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/b251fb03c7889628346ac516dc0fcbbf38327edb?width=345"
+          alt="Decorative"
+          class="decorative-item absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-[173px] xl:h-[173px] transform rotate-[-2deg]  top-[-160px] right-[-100px] sm:top-[-140px] lg:top-[-160px] lg:right-[-280px] xl:top-[-160px]"
+        />
             <!-- Item 17: Instagram section center 发光橘色 字体右上角-->
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f45bcefcbdf76872b48ff2e5c08fc0f8c15c48ea?width=206"
@@ -429,7 +449,7 @@
             />
           </div>
 
-          <div
+          <!-- <div
             class="flex flex-wrap sm:flex-nowrap justify-center gap-4 sm:gap-5 xl:gap-5 mb-6 sm:mb-8 xl:mb-10 items-center py-4"
           >
             <img
@@ -446,8 +466,18 @@
               src="https://api.builder.io/api/v1/image/assets/TEMP/715915274c7c6cc853d0910089aeaf0bd7f6323b?width=612"
               alt="Instagram Post 3"
               class="w-48 h-48 sm:w-40 sm:h-40 md:w-64 md:h-64 xl:w-[306px] xl:h-[306px] rounded-lg"
-            />
+        
+
+          </div> -->
+
+      <!-- auto sync with Instagram  -->
+          <div class="w-full mb-6 sm:mb-8 xl:mb-10 py-4">
+                      <!-- LightWidget WIDGET -->
+                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="//lightwidget.com/widgets/4385be123a3852ada009aab6710f850d.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;
+          ;"></iframe>
           </div>
+        
 
           <p
             class="text-mina-text text-sm sm:text-base md:text-lg xl:text-xl font-normal mb-6 sm:mb-8 xl:mb-11 text-center max-w-md xl:max-w-[477px]"
@@ -455,13 +485,18 @@
             Be up to date on our latest events and annoucements!
           </p>
 
-        <button
-  class="w-40 sm:w-48 xl:w-[199px] py-3 sm:py-4 
-         bg-mina-button rounded-full text-white text-lg sm:text-xl 
-         font-medium hover:opacity-90 transition-opacity mb-10"
->
-            Follow Now
-          </button>
+          <a 
+          href="https://www.instagram.com/getmina.app/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-40 sm:w-48 xl:w-[199px] py-3 sm:py-4 
+                bg-mina-button rounded-full text-white text-lg sm:text-xl 
+                font-medium hover:opacity-90 transition-opacity mb-10 
+                inline-block text-center"
+        >
+          Follow Now
+        </a>
+
 
           <!-- Item 19: Footer right 橘色小花右边-->
           <img
